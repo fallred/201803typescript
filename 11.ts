@@ -57,9 +57,9 @@ class Father {
     getName(){
         return this.name;
     }
-    // getAge(){
-    //     return this.age;
-    // }
+    getAge(){
+        return this.age;
+    }
     getMoney(){
         return this.money;
     }
@@ -67,15 +67,22 @@ class Father {
 }
 
 class Child extends Father {
+    getName(){
+        return this.name;
+    }
     getAge() {
         return this.age;
     }
     // getMoney(){
-    //     return this.money;
+        // return this.money;
     // }
 }
 let child = new Child('zfpx', 10, 1);
 console.log(child.name);
+child.getName();
+// child.age();
+
+
 // 不能访问
 // console.log(child.age);
 // 不能访问
